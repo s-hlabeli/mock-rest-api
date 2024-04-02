@@ -1,50 +1,213 @@
 {
-    "person": [],
-    "persontype": [],
-    "personidtype": [],
-    "contacttype": [],
-    "disabilitytype": [],
-    "relationshiptype": [],
-    "recognitionentitytype": [],
-    "racetype": [],
-    "qualificationtype": [],
-    "language": [],
-    "personachievementtype": [],
-    "addresstype": [],
-    "location": [],
-    "employee": [],
-    "employeetype": [],
-    "employeeroletype": [],
-    "designationtype": [],
-    "trainingstatustype": [],
-    "trainingtype": [],
-    "employeedocumentType": [],
-    "designation": [],
-    "academicyear": [],
-    "student": [],
-    "studenttype": [],
-    "studentroletype": [],
-    "studentapplication": [],
-    "studentregistration": [],
-    "studentadmission": [],
-    "applicationassessment": [],
-    "applicationassessementtype": [],
-    "studentregistrationstatustype": [],
-    "studentregistrationstatus": [],
-    "studenthousingtype": [],
-    "course": [],
-    "coursetype": [],
-    "assessment": [],
-    "courseassessmenttype": [],
-    "leavestatusype": [],
-    "leaverequest": [],
-    "leaveentitlement": [],
-    "backgroundcheckstatustype": [],
-    "jobapplicationstatustype": [],
-    "jobapplicationdocumenttype": [],
-    "jobinterviewtype": [],
-    "jobpoststatustype": [],
-    "referencecheckstatustype": [],
-    "jobapplication": [],
-    "jobpost": []
-} 
+    "tendertypes": [
+      {
+        "id": 1,
+        "tenderTypeCd": "CPAY",
+        "name": "C Pay",
+        "activeFlg": true
+      },
+      {
+        "tenderTypeCd": "MPESA",
+        "activeFlg": true,
+        "name": "Mpesa",
+        "version": null,
+        "tenderTypeLang": [
+          {
+            "tenderTypeLangCd": "MPESA01",
+            "languageCd": "ENG00",
+            "name": "Mpesa",
+            "description": "Mpesa"
+          }
+        ],
+        "id": 7
+      },
+      {
+        "tenderTypeCd": "ECOCASH",
+        "name": "Ecocash",
+        "activeFlg": true,
+        "version": null,
+        "tenderTypeLang": [
+          {
+            "tenderTypeLangCd": "ECOCASH",
+            "languageCd": "ENG00",
+            "name": "Ecocash",
+            "description": "Ecocash"
+          }
+        ],
+        "id": 8
+      }
+    ],
+    "language": [
+      {
+        "id": 1,
+        "languageCd": "ENG00",
+        "name": "English",
+        "activeFlg": true
+      },
+      {
+        "languageCd": "SES",
+        "name": "Sesotho",
+        "activeFlg": true,
+        "version": null,
+        "id": 2
+      },
+      {
+        "languageCd": "ZUL",
+        "name": "Zulu",
+        "activeFlg": false,
+        "version": null,
+        "id": 3
+      },
+      {
+        "languageCd": "FRANCH",
+        "name": "France",
+        "activeFlg": true,
+        "version": null,
+        "id": 4
+      }
+    ],
+    "dailysales": [
+      {
+        "id": 1,
+        "floatAmount": 30000,
+        "capturedDt": "2023-05-01T00:00",
+        "comments": "M50 was taken as petty cash",
+        "dailyTenders": [
+          {
+            "amount": 15000,
+            "tenderTypeCd": "CASH_TD"
+          },
+          {
+            "amount": 700,
+            "tenderTypeCd": "FNB_TD"
+          },
+          {
+            "amount": 750,
+            "tenderTypeCd": "SLB_TD"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "capturedDt": "2024-03-27T22:00:00.000Z",
+        "floatAmount": "1212",
+        "comments": "qweqwe",
+        "dailyTenders": [
+          {
+            "id": null,
+            "tenderTypeCd": "CPAY",
+            "amount": "121"
+          }
+        ],
+        "dailySalesTaken": [
+          {
+            "id": null,
+            "amount": "212",
+            "comments": "qwewqe"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "capturedDt": "2024-03-26T22:00:00",
+        "floatAmount": "13",
+        "comments": "qqqq",
+        "dailyTenders": [
+          {
+            "id": null,
+            "tenderTypeCd": "CPAY",
+            "amount": "13"
+          }
+        ],
+        "dailySalesTaken": [
+          {
+            "id": null,
+            "amount": "13",
+            "comments": "qqqq"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "capturedDt": "2024-03-31T22:00:00",
+        "floatAmount": "120",
+        "comments": "Ntate took 50 bucks",
+        "dailyTenders": [
+          {
+            "id": null,
+            "tenderTypeCd": "ECOCASH",
+            "amount": "120"
+          }
+        ],
+        "dailySalesTaken": [
+          {
+            "id": null,
+            "amount": "120",
+            "comments": "Ntate took 50 bucks"
+          }
+        ]
+      }
+    ],
+    "mobilemoney": [
+      {
+        "id": 1,
+        "mpesaAmount": 1500,
+        "ecocashAmount": 7500,
+        "electricityAmount": 2050,
+        "airtimeAmount": 8000,
+        "cashplusAmount": 2500,
+        "dailySalesId": 8516729566128981000,
+        "comments": "No comments."
+      },
+      {
+        "id": 2,
+        "mpesaAmount": "120",
+        "ecocashAmount": "120",
+        "cashplusAmount": "120",
+        "electricityAmount": "120",
+        "airtimeAmount": "120",
+        "comments": "Commented",
+        "mobileMpesa": {
+          "floatAmount": "120",
+          "commissionAmount": "120",
+          "accountAmount": "120",
+          "mobileMpesaTaken": [
+            {
+              "amount": "120",
+              "comments": "No comments"
+            }
+          ]
+        },
+        "mobileEcocash": {
+          "floatAmount": "120",
+          "commissionAmount": "120",
+          "accountAmount": "120",
+          "mobileEcocashTaken": [
+            {
+              "amount": "120",
+              "comments": "No comment"
+            }
+          ]
+        },
+        "mobileElectricityAirtime": {
+          "balanceAmount": "120",
+          "mobileElectricityAirtimeTaken": [
+            {
+              "amount": "120",
+              "comments": "No comments"
+            }
+          ]
+        },
+        "mobileCashplus": {
+          "balanceAmount": "120",
+          "commissionAmount": "120",
+          "mobileCashplusTaken": [
+            {
+              "amount": "120",
+              "comments": "No comment"
+            }
+          ]
+        }
+      }
+    ]
+  }
